@@ -1,0 +1,142 @@
+@media (max-width: 800px){
+
+	/* Estilos generales */
+	.presentacion h3, .caracteristicas h3, .regalos h3, .blog h3{
+    	font-size: 29px;
+    }	
+
+	/* Estilos para el menu principal */
+
+	.menu-icon{
+		display: block;
+	}
+
+	header nav{
+		position: absolute;
+		top: 45px;
+		left: 0;
+		background: black;
+		width: 100%;
+		/* display: none; */
+
+	}
+
+	header nav ul{
+		display: block;
+		color: white;
+	}
+
+	header nav ul li{
+		margin-bottom: 20px;
+		color: white;
+	}
+
+	/* Estilos para los titulos del menu principal */
+
+	.titulos{
+		padding: 100px 0;
+	}
+
+	.titulo{
+		width: 100%;
+	}
+
+	.titulos h1{
+		letter-spacing: 30px;
+	}
+
+	.titulos h2{
+		margin: 0;
+		width: 100%;
+	}
+
+	.titulos p{
+		letter-spacing: 0;
+	}
+
+	/* Estilos para la sección de presentación */
+
+	.presentacion p{
+		width: 100%;
+	}
+
+	.cuartos{
+		flex-direction: column;
+	}
+
+	.cuartos-izquierda, .cuartos-derecha{
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.botones{
+		text-align: center;
+		padding: 40px 0 40px 5px;
+		margin-bottom: 40px;
+	}
+
+	.botones .boton{
+		margin-bottom: 20px;
+	}
+
+	.testimonios p{
+		width: 100%;
+	}
+
+	/* Estilos para la sección de caracteristicas */
+
+	.caracteristicas p{
+		width: 100%;
+	}
+
+	.caracteristica{
+		flex-direction: column;
+	}
+
+	.caracteristica-izquierda, 
+	.caracteristica-derecha{
+		width: 100%;
+	}
+
+	.caracteristica-derecha{
+		padding: 0;
+		margin-bottom: 40px;
+	}
+
+	.regalos p{
+		width: 100%;
+	}
+
+	.regalo{
+		flex-direction: column;
+	}
+
+	.regalo-item{
+		width: 100%;
+	}
+
+	.blog p{
+		width: 100%;
+	}
+
+	.post{
+		flex-direction: column;
+	}
+
+	.post-item{
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	.footer{
+		flex-direction: column;
+	}
+
+	.info, .contacto, .newsletter{
+		width: 100%;
+	}
+	
+
+
+	
+}

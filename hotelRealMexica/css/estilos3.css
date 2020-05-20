@@ -1,0 +1,1336 @@
+/* ESTILOS GENERALES */
+
+*{
+	box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, p, ul{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+img {
+	vertical-align: top;
+	width: 100%;
+}
+
+.contenedor{
+	max-width: 1300px;
+	width: 90%;
+	margin: auto;
+}
+
+ul {
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #656565;
+}
+
+.iniciales{
+	color: #e9b21e;
+	font-family: 'Galada', cursive;
+	letter-spacing: 2px;
+	font-weight: normal;
+}
+
+.boton{
+	border: 1px solid white;
+	color: #e9b21e;
+	padding: 15px 20px;
+	letter-spacing: 2px;
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.boton2{
+	border: 2px solid #e9b21e;
+	color: #e9b21e;
+	padding: 10px 20px;
+	letter-spacing: 2px;
+	font-size: 14px;
+	font-weight: 600;
+    cursor: pointer;
+	display: inline-block;
+	transition: all .6s ease;
+}
+
+.boton2:hover {
+	border: 2px solid #2B436A;
+	background: #2B436A;
+	color: white;
+}
+
+.boton3 {
+	border-bottom: 2px solid rgb(255, 255, 255, .4);
+	color: white;
+	display: inline-block;
+	font-weight: 600;
+	letter-spacing: 2px;
+	padding: 0 0 10px 0;
+	font-size: 14px;
+	transition: all .6s ease;
+	margin-left: 10px;
+}
+
+.boton3:hover {
+	border-bottom: 2px solid white;
+}
+
+.comillas {
+    font-size: 90px;
+    opacity: .2;
+}
+
+.icono-caracteristicas-cuarto-hover {
+	color: white;
+}
+
+.tituloh2 {
+	color: #656565;
+	font-size: 20px;
+	letter-spacing: 5px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+/* ESTILOS PARA EL HEADER PRINCIPAL */
+
+.menu-principal {
+	background: #F7F7F7;
+    z-index: 90;
+    transition: all 2s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.logo{
+	width: 90px;
+	transition: all .6s ease;
+}
+
+.menu-icon{
+	width: 40px;
+    height: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .menu-icon {
+        display: none;
+    }
+}
+
+header nav {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    header nav {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header nav ul{
+    display: flex; 
+    }
+}
+
+header nav {
+    flex: 0 0 100%;
+}
+
+@media screen and (min-width: 768px) {
+    header nav {
+        flex: 0 0 auto;
+    }
+}
+
+header nav ul li{
+	padding: 10px 20px;
+	color: #656565;
+	font-weight: 500;
+	font-size: 17px;
+}
+
+.titulos{
+    /* margin-top: 100px; */
+	background-image: url(../img/hotel.jpg);
+	padding: 150px 0;
+	background-size: cover;
+	color: white;
+	height: 100vh;
+	min-height: 500px;
+	text-align: center;
+}
+
+.titulo{
+	width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .titulo {
+        width: 40%;
+    }
+}
+
+.titulos h1{
+    font-size: 80px;
+    letter-spacing: 22px;
+	font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+    .titulos h1 {
+        letter-spacing: 70px;
+    }
+}
+
+.titulos h2{
+	font-size: 30px;
+	font-weight: 500;
+    margin-bottom: 10px;
+	letter-spacing: 2px;
+	font-family: 'Galada', cursive;
+}
+
+.titulos p{
+	opacity: .8;
+	margin-bottom: 40px;
+	letter-spacing: .3px;
+}
+
+/* ESTILOS PARA LA SECCION DE PRESENTACIÓN */
+
+.presentacion{
+	text-align: center;
+	background: #FAFAFA;
+	padding: 90px 0;
+}
+
+.presentacion h2, .caracteristicas h2, .regalos h2, .blog h2{
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #333;
+	font-weight: 600;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.presentacion h3, .caracteristicas h3, .regalos h3, .blog h3{
+	font-size: 35px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+.presentacion p{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	color: gray;
+	font-size: 15px;
+	line-height: 27px;
+	margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .presentacion p {
+        width: 65%;
+    }
+}
+
+/* ESTILOS PARA LA SECCION NUESTRAS HABITACIONES */
+
+.nuestros-cuartos, 
+.caracteristicas{
+	background: #F0F0F0;
+	padding: 90px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .cuartos{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.cuartos h2{
+	font-size: 30px;
+	font-weight: 500;
+	color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .cuartos h2 {
+        text-align: left;
+    }
+}
+
+.cuartos p{
+	color: gray;
+	font-size: 15px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .cuartos p {
+        text-align: left;
+    }    
+}
+
+.cuartos-izquierda, .cuartos-derecha{
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .cuartos-izquierda, .cuartos-derecha{
+        width: 41%;
+        margin-left: 40px;
+    }
+}
+
+.cuartos-izquierda {
+	margin-top: 40px;
+}
+
+div.img-cuarto-singular {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.cuadro-nombre-cuarto {
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	/* background: rgba(255, 255, 255, .7); */
+	background: white;
+	bottom: 0;
+	transition: all .6s ease;
+}
+
+.img-cuarto-singular {
+	overflow: hidden;
+}
+
+.img-cuarto-singular:hover .cuadro-caracterisiticas-cuarto-hover {
+	opacity: 1;
+	background: rgba(0, 0, 0, .6);
+}
+
+.img-cuarto-singular img { 
+	transition: all 4s ease;
+}
+
+.img-cuarto-singular:hover img {
+	transform: scale(1.15,1.15);
+}
+
+.cuadro-caracterisiticas-cuarto-hover {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* -webkit-transition: all .6s ease;
+	-moz-transition: all .6s ease;
+	-o-transition: all .6s ease;
+	-ms-transition: all .6s ease-in-out; */
+	transition: all .6s ease;
+	opacity: 0;
+}
+
+.img-cuarto-singular:hover .cuadro-nombre-cuarto {
+	opacity: 0;
+}
+
+.cuadro-caracterisiticas-cuarto-hover .envuelve-caracteristicas {
+	/* position: absolute;
+	width: 80%;
+	top: calc(50% - 25%);
+	left: calc(50% - 35%); */
+	/* padding:  0 20px; */
+	flex: 0 0 calc(67%);
+	/* background: blue; */
+	/* text-align: center; */
+}
+
+.cuadro-caracterisiticas-cuarto-hover ul {
+	margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+	.cuadro-caracterisiticas-cuarto-hover ul {
+		margin-bottom: 40px;
+	}
+}
+
+.cuadro-caracterisiticas-cuarto-hover ul li {
+	display: inline-block;
+	padding: 0 10px;
+	margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1366px) {
+	.cuadro-caracterisiticas-cuarto-hover ul li{ 
+		border-right: 1px solid rgba(255, 255, 255, .4);
+	}
+	.cuadro-caracterisiticas-cuarto-hover ul li:nth-child(3),
+	.cuadro-caracterisiticas-cuarto-hover ul li:nth-child(5),
+	.cuadro-caracterisiticas-cuarto-hover ul li:nth-child(7),
+	.cuadro-caracterisiticas-cuarto-hover ul li:last-child {
+		border: none;
+	}
+	.icono-banera {
+		border-right: 1px solid rgba(255, 255, 255, .4) !important;
+	}	
+}
+
+.cuadro-caracterisiticas-cuarto-hover p{
+	color: white;
+}
+
+@media screen and (min-width: 768px) {
+	.cuadro-nombre-cuarto { 
+		width: 50%;
+	}
+}
+
+p.nombre-habitacion {
+	margin: 0;
+	text-align: center;
+	padding: 14px 0;
+	font-weight: bold;
+	font-family: 'Galada', cursive;
+	color: rgb(64, 64, 64);
+}
+
+span.precio {
+	color: rgb(90, 90, 90);
+}
+
+.cuartos img {
+	width: 100%;
+	/* margin-bottom: 20px; */
+	-webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.2);
+}
+
+.cuartos-derecha img{
+	height: 361px;
+}
+
+.botones {
+    text-align: center;
+    padding: 40px 0 40px 5px;
+    margin-bottom: 40px;
+	background: #e9b21e;
+}
+
+.botones .boton{
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .botones{ 
+        padding: 40px 0 40px 40px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .botones .boton{
+		margin-bottom: 0;
+	}
+}
+
+.botones p{
+	color: white;
+}
+
+.botones .boton, 
+.boton-enviar .boton{
+	color: #333;
+	border: none;
+	background: white;
+	transition: all .6s ease;
+}
+
+.botones .boton:hover, 
+.boton-enviar .boton:hover {
+	background: #6E7D9A;
+	color: white;
+}
+
+.botones .boton:last-child{
+	margin-left: 10px;
+}
+
+/* Estilos para la sección de testimonios */
+
+.testimonios{
+	background:linear-gradient(270deg, rgba(233,178,30,.9) 0%, 
+		rgba(233,178,30,.9) 100%) 
+	,url(../img/habitacion.jpeg) fixed bottom;
+	color: white;
+	padding: 80px 0;
+	text-align: center;
+	background-size: cover;
+}
+
+.testimonios p{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	text-align: center;
+	line-height: 27px;
+}
+
+.foto img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+.foto h2{
+	display: inline;
+	margin-left: 10px;
+	font-family: 'Galada', cursive;
+	font-weight: normal;
+	font-size: 20px;
+}
+
+/* ESTILOS PARA LA SECCIÓN CARACTERISTICAS */
+
+.caracteristicas{
+	text-align: center;
+}
+
+.caracteristicas h3{
+	margin-bottom: 20px;
+}
+
+.caracteristicas p{
+	color: gray;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .caracteristicas p {
+        width: 60%;
+    }
+}
+
+.caracteristica {
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .caracteristica{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+}
+
+.caracteristica-izquierda, .caracteristica-derecha{
+	width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .caracteristica-izquierda, .caracteristica-derecha{
+        width: 47%;
+    }
+}
+
+.caracteristica-izquierda img{
+	width: 100%;
+}
+
+.caracteristica-derecha{
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .caracteristica-derecha{
+        text-align: left;
+        padding: 60px 0 0 40px;
+    }
+}
+
+.caracteristica-derecha p{
+	width: 96%;
+	margin: 0;
+	margin-bottom: 20px;
+	font-size: 15px;
+	line-height: 27px;
+}
+
+.reverse{
+	flex-direction: row-reverse;
+}
+
+/* ESTILOS PARA LA SECCIÓN DE REGALOS */
+
+.regalos{
+	text-align: center;
+	padding: 90px 0;
+	background: #FAFAFA;
+}
+
+.regalos p{
+	color: gray;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 15px;
+	line-height: 27px;
+	margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .regalos p{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .regalo{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.regalo-item {
+    width: 100%;
+    border: 1px solid #DADADA;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .regalo-item{
+        width: 30%;
+        margin-bottom: 0;
+	}
+}
+
+.regalo-item img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.regalo-item h4, .regalo-item h5{
+	color: #333;
+}
+
+.regalo-item h4{
+	font-size: 20px;
+	letter-spacing: 2px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.regalo-item h5{
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+/*ESTILOS PARA LA SECCIÓN BLOG */
+
+.blog{
+	text-align: center;
+	padding: 90px 0;
+	background: #F0F0F0;
+}
+
+.blog p{
+	color: gray;
+	width: 100%;
+	margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+	line-height: 27px;
+}
+
+@media screen and (min-width: 768px) {
+    .blog p {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .post{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.post-item{
+    width: 100%;
+    padding: 0 0 1px 0;
+    margin-bottom: 40px;
+	background: white;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+}
+
+@media screen and (min-width: 768px) {
+    .post-item{
+        width: 30%;
+    }
+}
+
+.post-item img{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.post-item h4{
+	color: #333;
+	font-size: 17px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.post-item p{
+	text-align: justify;
+	width: 90%;
+	text-align: center;
+	font-size: 15px;
+	line-height: 27px;
+}
+
+/* ESTILOS PARA EL FOOTER */
+
+footer{
+	background: #222222;
+	color: white;
+	padding: 90px 0 1px;
+}
+
+footer a {
+	color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .footer{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .info, .contacto{
+        width: 27%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .newsletter{
+        width: 40%;
+    }
+}
+
+.redes-sociales-flex{
+	display: flex;
+}
+
+footer h2{
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+footer p{
+	font-size: 15px;
+	line-height: 25px;
+	margin-bottom: 20px;
+}
+
+.redes-sociales{
+	display: flex;
+	align-items: center;
+}
+
+i.fab{
+	line-height: 35px;
+	margin-left: 20px;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	text-align: center;
+	margin-bottom: 40px;
+	cursor: pointer;
+}
+
+.fa-facebook-f{
+	border: 2px solid blue;
+	transition: .6s;
+}
+
+.fa-facebook-f:hover{
+	background: blue;
+	transition: .6s;
+}
+
+.fa-twitter{
+	border: 2px solid cyan;
+	transition: .6s;
+}
+
+.fa-twitter:hover{
+	background: cyan;
+	transition: .6s;
+}
+
+.fa-pinterest{
+	border: 2px solid red;
+	transition: .6s;
+}
+
+.fa-pinterest:hover{
+	background: red;
+	transition: .6s;
+}
+
+.newsletter input[type='email']{
+	outline: none;
+	border: 0;
+	background: none;
+	border: 2px solid #e9b21e;
+	padding: 15px;
+	width: 100%;
+	font-size: 16px;
+	color: white;
+}
+
+.newsletter form{
+	width: 95%;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.newsletter input[type='submit']{
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	bottom: 4px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border: 0;
+	outline: none;
+	background: #e9b21e;
+	color: white;
+	font-size: 14px;
+	letter-spacing: 2px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.bold{
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.contacto li{
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+
+.contacto li:last-child{
+	cursor: pointer;
+}
+.span{
+	font-weight: 500;
+}
+
+hr{
+	border: .5px solid white;
+	opacity: .1;
+}
+
+.creador{
+	text-align: center;
+	padding-top: 10px;
+    opacity: .8;
+}
+
+/*ESTILOS PÁGINA INTERNA GALERIA DE IMAGENES*/
+
+.galeria {
+	padding: 90px 0;
+}
+
+.galeria .imagenes .imagen-singular {
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+	.galeria .imagenes {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.galeria .imagenes .imagen-singular {
+		flex: 0 0 calc(25% - 10px);
+	}
+}
+
+.galeria .imagenes .imagen-singular img {
+	opacity: .5;
+	transition: all .6s ease;
+}
+
+.galeria .imagenes .imagen-singular img:hover {
+	opacity: 1;
+	/* transform: scale(1.2); */
+}
+
+/*ESTILOS PÁGINA INTERNA CONTÁCTO*/
+
+.frame-mapa {
+	width: 100%;
+	min-height: 300px;
+	height: 400px;
+	max-height: 500px;
+}
+
+.formulario-seccion {
+	padding: 90px 0;
+	background: #F7F7F7;
+	margin-top: -10px;
+	text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+	.formulario-contacto {
+		display: flex;
+		justify-content: space-between;
+		text-align: left;
+	}
+	.formulario-contacto-pagina {
+		flex: 0 0 calc(60% - 10px);
+	}
+	.dato-contacto {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.dato-contacto input[type='text'],
+.dato-contacto input[type='email'],
+.dato-contacto textarea {
+	width: 100%;
+	flex: 0 0 100%;
+}
+
+@media screen and (min-width: 768px) {
+	.dato-contacto input[type='text'],
+	.dato-contacto input[type='email'] {
+		flex: 0 0 calc(50% - 10px);
+	}
+}
+
+.dato-contacto input[type='text'],
+.dato-contacto input[type='email'],
+.dato-contacto textarea {
+	display: inline-block;
+	outline: none;
+	font-size: 15px;
+	margin-bottom: 10px;
+	color: #333;
+	padding: 20px;
+	transition: all .6s ease;
+	border: 1px solid rgb(207, 207, 207);
+}
+
+.dato-contacto input[type='text']:focus,
+.dato-contacto input[type='email']:focus,
+.dato-contacto textarea:focus {
+	border: 1px solid #d39f59;
+	/* box-shadow: 0px 0px 10px 0px #d39f59; */
+	box-shadow: 0 10px 0 0 #d39f59;
+	
+}
+
+.dato-contacto textarea {
+	height: 200px;
+	min-height: 200px;
+	max-height: 400px;
+}
+
+@media screen and (min-width: 768px) {
+	.dato-contacto textarea {
+		max-width: 800px;
+		min-width: 800px;
+	}
+}
+
+.boton-contacto .boton2 {
+	padding: 15px 120px;
+	background: none;
+	margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+	.boton-contacto .boton2 {
+		margin-bottom: 0;
+	}
+}
+
+.boton-contacto .boton2:hover {
+	background: #2B436A;
+}
+
+.formulario-seccion .contacto{
+	color: gray;
+}
+
+.formulario-seccion .contacto h2 {
+	margin-bottom: 20px;
+	font-weight: normal;
+	letter-spacing: 5px;
+}
+
+/*ESTILOS PAGINA INTERNA CARACTERISTICAS CUARTO*/
+
+.informacion-habitacion {
+	padding: 90px 0;
+}
+
+@media screen and (min-width: 768px) {
+	.habitacion-servicios {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.habitacion-servicios h2 { 
+	color: #656565;
+	font-size: 20px;
+	letter-spacing: 5px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+.habitacion-servicios h2 span { 
+	font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+	.imagen-habitacion-servicio {
+		flex: 0 0 calc(60% - 30px);
+	}
+
+.caracteristicas-habitacion-servicio { 
+		flex: 0 0 calc(40% - 10px);
+	}
+}
+
+.imagen-habitacion-servicio img {
+	width: 100%;
+}
+
+details.detalles {
+	background: #6E7D9A;
+	margin-bottom: 10px;
+	padding: 20px;
+	color: white;
+	outline: none;
+	min-height: 48px;
+	max-height: 60px;
+	transform-origin: top center;
+	transform: rotate(0.1deg);
+	transition: all .6s ease;
+}
+
+details.detalles:last-of-type {
+	margin-bottom: 40px;
+}
+
+details.detalles summary {
+	outline: none;
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+details.detalles li{
+	display: inline-block;
+	padding: 10px;
+}
+
+.caracteristicas-habitacion-servicio div.boton-reservar {
+	text-align: center;
+}
+
+details.detalles[open] {
+	transition: all .6s ease;
+	min-height: 340px;
+	max-height: 340px;
+}
+
+@media screen and (min-width: 768px) {
+	details.detalles[open] {
+		min-height: 240px;
+		max-height: 240px;
+	}
+}
+
+.imagenes-extra {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+	.imagenes-extra {
+		margin-top: 0;
+	}
+}
+
+.imagen-extra {
+	flex: 0 0 calc(35.33% - 10px);
+	margin-bottom: 5px;
+}
+
+@media screen and (min-width: 768px) {
+	.imagen-extra.ultima {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.imagen-extra {
+		flex: 0 0 calc(25% - 5px);
+	}
+}
+
+.imagen-extra img {
+	opacity: .5;
+	transition: all .6s ease;
+}
+
+.imagen-extra img:hover {
+	opacity: 1;
+}
+
+/*ESTILOS PAGINA INTERNA RESERVACIÓN*/
+
+.seccion-formulario-reservacion {
+	background: #2B436A;
+	color: white;
+	text-align: center;
+	padding: 90px 0;
+}
+
+.seccion-formulario-reservacion h2 {
+	font-weight: normal;
+	font-size: 35px;
+	letter-spacing: 5px;
+	margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+	.datos-cliente {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.formulario-reservacion input[type = 'text'],
+.formulario-reservacion select {
+	background: none;
+	outline: none;
+	border: 2px solid rgba(255, 255, 255, .2);
+	padding: 20px 40px;
+	font-size: 16px;
+	color: white;
+	margin-bottom: 20px;
+	width: 100%;
+	transition: all .6s ease;
+}
+
+.formulario-reservacion input[type = 'text']:focus, 
+.formulario-reservacion select:focus {
+	color: #333;
+	background: white;
+}
+
+.formulario-reservacion input[type = 'text']:focus ~ .icono-calendario {
+	color: #2B436A;
+}
+
+@media screen and (min-width: 768px) {
+	.formulario-reservacion input[type = 'text'],
+	.formulario-reservacion select { 
+		margin-bottom: 40px;
+	}
+}
+
+.formulario-reservacion input[type = 'text']::-webkit-input-placeholder {
+    color: white;
+}
+
+.formulario-reservacion select,
+div.fechas-reservacion input[type = 'text'] {
+	cursor: pointer;
+}
+
+div.validacion-datos,
+div.fechas-reservacion {
+	position: relative;
+}
+
+span.mensaje-validacion,
+i.icono-calendario {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 24px;
+}
+
+span.mensaje-validacion{ 
+	padding: 0 5px;
+	font-size: 12px;
+	color: #e94336;
+	display: none;
+}
+
+.active-borde {
+	border: 2px solid #e94336 !important;
+}
+
+.sugerencia-habitaciones {
+	opacity: 0;
+	transition: all .6s ease;
+}
+
+.active-sugerencia-habitaciones {
+	opacity: 1;
+}
+
+span.mensaje-validacion.active {
+	display: block;
+}
+
+.sugerencia-reservacion p {
+	margin-bottom: 60px;
+}
+
+.boton-enviar .boton {
+	padding: 20px 30px;
+	font-size: 16px;
+}
+
+.disabled {
+	background: rgba(255, 255, 255, .2) !important;
+	cursor: default !important;
+}
+
+.disabled:hover {
+	background: rgba(255, 255, 255, .2)!important;
+	color: #333 !important;
+}
+
+.mensaje-reservacion-exitosa {
+	position: fixed;
+	z-index: 90;
+	padding: 20px;
+	bottom: 0;
+	background: lime;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, .4);
+	color: white;
+}
+
+.mensaje-reservacion-exitosa .icono-check {
+	margin-right: 10px;
+	font-size: 20px;
+}
+
+.mensaje-reservacion-exitosa p {
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+
+/*ESTILOS PARA EL DATEPICKER*/
+
+/* .ui-widget-header {
+	background: #e9b21e !important;
+}
+
+.ui-datepicker-calendar thead {
+	background: #333;
+    color: white;
+}
+
+.ui-state-default {
+	transition: all .6s ease !important;
+}
+
+.ui-state-default:hover {
+	transform: scale(2) !important;
+	color: white !important;
+	background: #2B436A !important;
+	border: 1px solid white !important;
+}
+
+.ui-state-active {
+	background: #2B436A!important;
+	border: 1px solid white !important;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

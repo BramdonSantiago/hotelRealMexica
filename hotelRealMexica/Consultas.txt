@@ -1,0 +1,19 @@
+/*TABLERO*/
+SELECT COUNT(num_reservacion) FROM reservaciones
+SELECT SUM(total) FROM reservaciones
+SELECT SUM(numero_personas) FROM reservaciones
+SELECT *FROM reservaciones order by num_reservacion desc limit 1
+
+/*CLIENTES*/
+SELECT nombre_cliente, apellidos_cliente, email_cliente, telefono_cliente FROM reservaciones
+SELECT SUM(id_cliente) FROM clientes;
+
+/*PROVEEDORES*/
+SELECT * FROM `proveedores` WHERE tipo_proveedor = "producto"
+SELECT * FROM `proveedores` WHERE tipo_proveedor = "servicio"
+
+/*LOGIN*/
+SELECT * FROM administradores WHERE nombre = '$usuario' and password = '$password'
+
+/*FOTOGRAFIA*/
+SELECT fotografia FROM administradores WHERE nombre = "$usuario" 
